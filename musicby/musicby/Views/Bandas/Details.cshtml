@@ -1,0 +1,33 @@
+﻿@model musicby.Models.Banda
+
+@{
+
+    ViewData["Title"] = "Detalles";
+
+}
+
+<h1>Detalles</h1>
+
+<div>
+    <h4>Banda</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BandaName)
+            @Html.DisplayNameFor(model => model.BandaGenero)
+        </dt>
+
+        <dd class="col-sm-2">
+            @Html.DisplayFor(model => model.BandaName)
+            @Html.DisplayFor(model => model.BandaGenero)
+
+        </dd>
+    </dl>
+
+</div>
+
+<div>
+    <a asp-action="Edit" class="btn btn-warning" asp-route-id="@Model.BandaId">Editar</a>
+
+    <a asp-action="Index" class="btn btn-warning">Regresar</a>
+</div>
