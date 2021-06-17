@@ -48,22 +48,6 @@ namespace musicby.Controllers
 
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         public IActionResult Create()
         {
 
@@ -87,7 +71,7 @@ namespace musicby.Controllers
         }
 
 
-        // Departamentos/Edit/1
+        // Bandas/Edit/1
 
         public async Task<IActionResult> Edit(int? id)
         {
